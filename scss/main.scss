@@ -1,0 +1,383 @@
+$color-1: #bd194b;
+$color-2: #d6941d;
+$color-3: #1c4296;
+$color-4: #3c8000;
+$border-color: #999;
+$text-color: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color:#eaeaea;
+}
+nav{
+    height: 100%;
+    padding: 10px;
+    grid-column: 1;
+    width: 200px;
+    background-color: white;
+    border-right: 3px solid #ccc;
+}
+nav .as{
+    padding: 10px;
+}
+nav h3{
+    border-bottom: 1px solid $border-color;
+    padding: 20px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    fill:gray;
+}
+nav a:hover{
+    background-color: #c32055;
+    color: $text-color;
+    fill:white;
+}
+
+header{
+    padding: 30px 25px;
+    display: flex;
+}
+header h4:nth-of-type(1){
+    display: none;
+    padding: 5px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        "us us us r r r fi fi fi f f f"
+        "ds ds ds ds es es es es ct ct ct ct"
+        "t t t t t t u u u u u u ";
+}
+
+
+.box{
+    background-color: #fff;
+    margin: 30px;
+    box-shadow: 0 0 12px 1px rgba(0,0,0, .5);
+}
+.box .smb{
+    margin-top: -30px;
+}
+.box .flbox{
+    display: flex;
+    justify-content: space-between;
+}
+.box .text{
+    text-align: right;
+    padding: 10px;
+}
+.box .flbox .text p:nth-child(1){
+    color: #999;
+    padding: 10px;
+}
+.box .flbox .text p:nth-child(2){
+    font-size: 2rem;
+    padding: 10px;
+}
+.box .img{
+    margin: 10px 20px;
+    padding: 10px;
+    border-top: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-1{
+    grid-area: us;
+}
+.box-2{
+    grid-area: r;
+}
+.box-3{
+    grid-area: fi;
+}
+.box-4{
+    grid-area: f;
+}
+.box-5{
+    grid-area: ds;
+}
+.box-6{
+    grid-area: es;
+}
+.box-7{
+    grid-area: ct;
+}
+.box-8{
+    grid-area: t;
+}
+.box-9{
+    grid-area: u;
+}
+.box-1 .smb{
+    display: flex;
+    background-color: $color-4;
+    height: 96px;
+    width: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.box-2 .smb{
+    display: flex;
+    background-color: $color-2;
+    height: 96px;
+    width: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.box-3 .smb{
+    display: flex;
+    background-color: $color-3;
+    height: 96px;
+    width: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.box-4 .smb{
+    display: flex;
+    background-color: $color-1;
+    height: 96px;
+    width: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.box-5 .smb{
+    display: flex;
+    background-color: $color-4;
+    height: 180px;
+    width: calc(100% - 30px);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-5 .smb img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+.box-6 .smb{
+    display: flex;
+    background-color: $color-2;
+    height: 180px;
+    width: calc(100% - 30px);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-6 .smb img{
+    object-fit: contain;
+    width: 100%;
+    height: 180px;
+    
+}
+.box-7 .smb{
+    display: flex;
+    background-color: $color-3;
+    height: 180px;
+    width: calc(100% - 30px);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-7 .smb img{
+    object-fit: contain;
+    width: 100%;
+    height:180px;
+}
+.box-8 .smb{
+    display: flex;
+    background-color: $color-2;
+    height: 90px;
+    width: calc(100% - 60px);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: $text-color;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-8 .smb div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.box-8 .smb div:hover{
+    background-color: #ffffff55;
+    
+}
+.box-9 .smb{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-3;
+    height: 90px;
+    width: calc(100% - 60px);
+    justify-content: center;
+    padding-left: 20px;
+    gap: 15px;
+    color: $text-color;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-6 .text p:nth-child(1), .box-7 .text p:nth-child(1), .box-5 .text p:nth-child(1){
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.box-6 .text p:nth-child(2), .box-7 .text p:nth-child(2), .box-5 .text p:nth-child(2){
+    padding: 5px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0 30px;
+}
+li{
+    display: grid;
+    padding: 10px;
+    grid-template-columns:auto 1fr auto;
+    border-bottom: 1px solid $border-color;
+}
+ul li:last-child{
+    border: none;
+}
+li::before{
+    content: "\2610";
+    padding: 10px;
+}
+li img{
+    margin: 10px;
+}
+li div:first-child{
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+
+table{
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border-bottom: 1px solid $border-color;
+}
+
+th, td{
+    padding: 20px;
+    text-align: left;
+}
+table, tr:last-child td{
+    border: none;
+}
+
+footer{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-top: 1px solid #555;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+}
+footer span span{
+    padding: 10px;
+    font-weight: 600;
+}
+@media (max-width:1400px){
+    .box{
+        margin: 30px 10px;
+    }
+}
+@media (max-width:1253px){
+    main{
+        grid-template-areas: 
+            "us us us r r r"
+            "fi fi fi f f f"
+            "ds ds es es ct ct"
+            "t t t t t t"
+            "u u u u u u";
+    }
+    
+}
+@media (max-width:992px){
+    nav{
+        display: none;
+    }
+    body{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    header{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    header h4.menu-toggle{
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+@media (max-width:768px){
+    main{
+        grid-template-areas: 
+        "us r"
+        "fi f"
+        "ds ds"
+        "es es"
+        "ct ct"
+        "t t"
+        "u u";
+    }
+    .box-5 .smb, .box-6 .smb, .box-7 .smb{
+        height: 270px; 
+    }
+    .box-5 .smb img, .box-6 .smb img, .box-7 .smb img{
+        height: 260px; 
+    }
+}
+@media (max-width:576px){
+    main{
+        grid-template-areas: 
+        "us"
+        "r"
+        "fi"
+        "f"
+        "ds"
+        "es"
+        "ct"
+        "t"
+        "u";
+    }
+    .box-5 .smb, .box-6 .smb, .box-7 .smb{
+        height: 220px; 
+    }
+    .box-5 .smb img, .box-6 .smb img, .box-7 .smb img{
+        height: 210px; 
+    }
+    .box-8 div span{
+        display: none;
+    }
+}
